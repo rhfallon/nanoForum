@@ -6,6 +6,9 @@ import threadOne from './components/pages/threadOne'
 var firebase = require('firebase');
 var firebaseui = require('firebaseui');
 
+// Initialize the FirebaseUI Widget using Firebase.
+var ui = new firebaseui.auth.AuthUI(firebase.auth());
+
 class App extends Component{
   render(){
     return(
