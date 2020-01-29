@@ -36,7 +36,7 @@ class ThreadOne extends Component {
                   title={
                     <span>
                       <Icon type="user" />
-                      Login
+                      Hello userNameHere
                     </span>
                   }
                 >

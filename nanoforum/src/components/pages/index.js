@@ -8,6 +8,8 @@ import ThreadBtn from "./threadBtn"
 import { Layout, Menu, Icon, Form } from "antd";
 
 class index extends Component {
+
+
   render() {
     const { SubMenu } = Menu;
     const { Header, Content, Footer, Sider } = Layout;
