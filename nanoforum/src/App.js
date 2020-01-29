@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import index from './components/pages/index'
+import threadOne from './components/pages/threadOne'
 
 var firebase = require('firebase');
 var firebaseui = require('firebaseui');
@@ -11,6 +12,8 @@ class App extends Component{
       <Router>
       <div>
         <Route exact path="/" component= {index}/>
+        <Route exact path="/threadone" component= {threadOne}/>
+
       </div>
     </Router>
     )
