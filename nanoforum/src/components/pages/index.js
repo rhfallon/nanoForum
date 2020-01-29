@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "antd/dist/antd.css";
 import "../../index.css";
+import LoginForm from "./loginform"
 
 
 import { Layout, Menu, Icon, Form } from "antd";
@@ -38,7 +39,7 @@ class index extends Component {
                     </span>
                   }
                 >
-
+                    <LoginForm></LoginForm>
                 </SubMenu>
               </Menu>
             </Sider>
