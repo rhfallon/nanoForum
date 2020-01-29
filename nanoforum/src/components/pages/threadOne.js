@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "antd/dist/antd.css";
 import "../../index.css";
-import LoginForm from "./loginform"
-import ThreadBtn from "./threadBtn"
+import Comments from "./comments"
 
 
-import { Layout, Menu, Icon, Form } from "antd";
 
-class index extends Component {
+import { Layout, Menu, Icon } from "antd";
+
+class ThreadOne extends Component {
   render() {
     const { SubMenu } = Menu;
     const { Header, Content, Footer, Sider } = Layout;
@@ -40,12 +40,16 @@ class index extends Component {
                     </span>
                   }
                 >
-                    <LoginForm></LoginForm>
+       
                 </SubMenu>
               </Menu>
             </Sider>
             <Content style={{ padding: "0 24px", minHeight: 280 }}>
-                  <ThreadBtn></ThreadBtn>
+         
+
+                  <Comments></Comments>
+
+         
             </Content>
           </Layout>
         </Content>
@@ -57,4 +61,4 @@ class index extends Component {
   }
 }
 
-export default Form.create()(index);
+export default ThreadOne;
