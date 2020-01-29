@@ -27,12 +27,16 @@ class LoginForm extends Component {
 
       
   submitLogin = event => {
+    const usernameInput = this.state.usernameInput;
     if (this.state.loginId === "bob" && this.state.loginPassword === "test") {
       this.setState({
         usernameInput: this.state.loginId,
         userPasswordInput: this.state.loginPassword,
         loggedIn: true
       });
+      return (
+          alert("Hello "+ this.state.loginId)
+      )
     } else {
       alert("Wrong username or password. Please try again.");
     }
