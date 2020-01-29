@@ -8,6 +8,11 @@ import Comments from "./comments"
 import { Layout, Menu, Icon } from "antd";
 
 class ThreadOne extends Component {
+
+  state={
+    loginId:""
+  }
+
   render() {
     const { SubMenu } = Menu;
     const { Header, Content, Footer, Sider } = Layout;
@@ -36,7 +41,7 @@ class ThreadOne extends Component {
                   title={
                     <span>
                       <Icon type="user" />
-                      Hello userNameHere
+                      Hello {this.state.loginId}
                     </span>
                   }
                 >
