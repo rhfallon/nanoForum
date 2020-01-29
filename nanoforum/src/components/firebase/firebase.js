@@ -1,4 +1,4 @@
-import app from 'firebase/app';
+import firebase from 'firebase';
 const firebaseConfig = {
   apiKey: "AIzaSyCJfGnxvVtd9ISTOYyfRskmbD0HHJ6W-ek",
   authDomain: "nano-forum.firebaseapp.com",
@@ -10,10 +10,6 @@ const firebaseConfig = {
   measurementId: "G-2FVXBE56M1"
 };
 
-class Firebase {
-  constructor() {
-    app.initializeApp(config);
-  }
-}
+firebase.initializeApp(firebaseConfig)
 
-export default Firebase;
+export default firebase;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
+import firebase from '../firebase/firebase';
 
 class LoginForm extends Component {
   handleSubmit = e => {
